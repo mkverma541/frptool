@@ -1,0 +1,30 @@
+<?php
+/**
+ * Copy this file to the parent folder of the project clone.
+ *
+ * Example (Windows XAMPP):
+ *   Clone:  C:\xampp\htdocs\frptool\
+ *   Copy to: C:\xampp\htdocs\config.php
+ *
+ * Example (Linux VPS):
+ *   Clone:  /var/www/html/frptool/
+ *   Copy to: /var/www/html/config.php
+ *
+ * PHP files in api/*/ and crypto/*/ load: ../../../config.php
+ */
+
+return [
+    'db_user' => 'root',
+    'db_pass' => 'your_mysql_password',
+    'db_name' => 'frptool',
+
+    // Base URL of YOUR site (no trailing slash) — used for OTP verify callbacks
+    'verify_url' => 'https://yourdomain.com',
+
+    'site_title' => 'FRP Tool Server',
+    'site_sig'   => 'FRP',
+
+    // Optional: Telegram notifications on sign events (api/sign/sign.php)
+    'bot_token' => '',
+    'chat_id'   => '',
+];

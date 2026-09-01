@@ -1,0 +1,11 @@
+.env
+*.exe
+*.rar
+*.syso
+.DS_Store
+.tools/
+_realme_extract/
+config.php
+api/sign/request.log
+api/flash/error_log.txt
+api/flash/response_log.txt
